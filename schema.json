@@ -1,0 +1,379 @@
+
+
+  1 {
+  2   "$id": "http://example.com/example.json", 
+  3   "type": "object", 
+  4   "definitions": {}, 
+  5   "$schema": "http://json-schema.org/draft-07/schema#", 
+  6   "properties": {
+  7     "publications": {
+  8       "$id": "/properties/publications", 
+  9       "type": "array", 
+ 10       "items": {
+ 11         "$id": "/properties/publications/items", 
+ 12         "type": "object", 
+ 13         "properties": {
+ 14           "typeIdentifiantNational": {
+ 15             "$id": "/properties/publications/items/properties/typeIdentifiantNational", 
+ 16             "type": "string", 
+ 17             "title": "The Typeidentifiantnational Schema ", 
+ 18             "default": "", 
+ 19             "examples": [
+ 20               "SIREN"
+ 21             ]
+ 22           }, 
+ 23           "denomination": {
+ 24             "$id": "/properties/publications/items/properties/denomination", 
+ 25             "type": "string", 
+ 26             "title": "The Denomination Schema ", 
+ 27             "default": "", 
+ 28             "examples": [
+ 29               "PARISBRUXELLES"
+ 30             ]
+ 31           }, 
+ 32           "categorieOrganisation": {
+ 33             "$id": "/properties/publications/items/properties/categorieOrganisation", 
+ 34             "type": "object", 
+ 35             "properties": {
+ 36               "code": {
+ 37                 "$id": "/properties/publications/items/properties/categorieOrganisation/properties/code", 
+ 38                 "type": "string", 
+ 39                 "title": "The Code Schema ", 
+ 40                 "default": "", 
+ 41                 "examples": [
+ 42                   "SOCIV"
+ 43                 ]
+ 44               }, 
+ 45               "label": {
+ 46                 "$id": "/properties/publications/items/properties/categorieOrganisation/properties/label", 
+ 47                 "type": "string", 
+ 48                 "title": "The Label Schema ", 
+ 49                 "default": "", 
+ 50                 "examples": [
+ 51                   "Société civile (autre que cabinet d’avocats)"
+ 52                 ]
+ 53               }, 
+ 54               "categorie": {
+ 55                 "$id": "/properties/publications/items/properties/categorieOrganisation/properties/categorie", 
+ 56                 "type": "string", 
+ 57                 "title": "The Categorie Schema ", 
+ 58                 "default": "", 
+ 59                 "examples": [
+ 60                   "SOCIETE"
+ 61                 ]
+ 62               }
+ 63             }
+ 64           }, 
+ 65           "adresse": {
+ 66             "$id": "/properties/publications/items/properties/adresse", 
+ 67             "type": "string", 
+ 68             "title": "The Adresse Schema ", 
+ 69             "default": "", 
+ 70             "examples": [
+ 71               "PARISBRUXELLES\r\n9 AVENUE ALFRED VAN PELT"
+ 72             ]
+ 73           }, 
+ 74           "publierMonAdressePhysique": {
+ 75             "$id": "/properties/publications/items/properties/publierMonAdressePhysique", 
+ 76             "type": "boolean", 
+ 77             "title": "The Publiermonadressephysique Schema ", 
+ 78             "default": false, 
+ 79             "examples": [
+ 80               true
+ 81             ]
+ 82           }, 
+ 83           "codePostal": {
+ 84             "$id": "/properties/publications/items/properties/codePostal", 
+ 85             "type": "string", 
+ 86             "title": "The Codepostal Schema ", 
+ 87             "default": "", 
+ 88             "examples": [
+ 89               "62300"
+ 90             ]
+ 91           }, 
+ 92           "ville": {
+ 93             "$id": "/properties/publications/items/properties/ville", 
+ 94             "type": "string", 
+ 95             "title": "The Ville Schema ", 
+ 96             "default": "", 
+ 97             "examples": [
+ 98               "LENS"
+ 99             ]
+100           }, 
+101           "pays": {
+102             "$id": "/properties/publications/items/properties/pays", 
+103             "type": "string", 
+104             "title": "The Pays Schema ", 
+105             "default": "", 
+106             "examples": [
+107               "FRANCE"
+108             ]
+109           }, 
+110           "publierMonAdresseEmail": {
+111             "$id": "/properties/publications/items/properties/publierMonAdresseEmail", 
+112             "type": "boolean", 
+113             "title": "The Publiermonadresseemail Schema ", 
+114             "default": false, 
+115             "examples": [
+116               true
+117             ]
+118           }, 
+119           "emailDeContact": {
+120             "$id": "/properties/publications/items/properties/emailDeContact", 
+121             "type": "string", 
+122             "title": "The Emaildecontact Schema ", 
+123             "default": "", 
+124             "examples": [
+125               "contact@parisbruxelles.org"
+126             ]
+127           }, 
+128           "publierMonTelephoneDeContact": {
+129             "$id": "/properties/publications/items/properties/publierMonTelephoneDeContact", 
+130             "type": "boolean", 
+131             "title": "The Publiermontelephonedecontact Schema ", 
+132             "default": false, 
+133             "examples": [
+134               true
+135             ]
+136           }, 
+137           "telephoneDeContact": {
+138             "$id": "/properties/publications/items/properties/telephoneDeContact", 
+139             "type": "string", 
+140             "title": "The Telephonedecontact Schema ", 
+141             "default": "", 
+142             "examples": [
+143               "0178422663"
+144             ]
+145           }, 
+146           "lienSiteWeb": {
+147             "$id": "/properties/publications/items/properties/lienSiteWeb", 
+148             "type": "string", 
+149             "title": "The Liensiteweb Schema ", 
+150             "default": "", 
+151             "examples": [
+152               "http://www.parisbruxelles.org"
+153             ]
+154           }, 
+155           "lienPageFacebook": {
+156             "$id": "/properties/publications/items/properties/lienPageFacebook", 
+157             "type": "string", 
+158             "title": "The Lienpagefacebook Schema ", 
+159             "default": "", 
+160             "examples": [
+161               "https://www.facebook.com/parisbruxellesorg/"
+162             ]
+163           }, 
+164           "dirigeants": {
+165             "$id": "/properties/publications/items/properties/dirigeants", 
+166             "type": "array", 
+167             "items": {
+168               "$id": "/properties/publications/items/properties/dirigeants/items", 
+169               "type": "object", 
+170               "properties": {
+171                 "civilite": {
+172                   "$id": "/properties/publications/items/properties/dirigeants/items/properties/civilite", 
+173                   "type": "string", 
+174                   "title": "The Civilite Schema ", 
+175                   "default": "", 
+176                   "examples": [
+177                     "M"
+178                   ]
+179                 }, 
+180                 "nom": {
+181                   "$id": "/properties/publications/items/properties/dirigeants/items/properties/nom", 
+182                   "type": "string", 
+183                   "title": "The Nom Schema ", 
+184                   "default": "", 
+185                   "examples": [
+186                     "SANCHEZ"
+187                   ]
+188                 }, 
+189                 "prenom": {
+190                   "$id": "/properties/publications/items/properties/dirigeants/items/properties/prenom", 
+191                   "type": "string", 
+192                   "title": "The Prenom Schema ", 
+193                   "default": "", 
+194                   "examples": [
+195                     "Arnaud"
+196                   ]
+197                 }, 
+198                 "fonction": {
+199                   "$id": "/properties/publications/items/properties/dirigeants/items/properties/fonction", 
+200                   "type": "string", 
+201                   "title": "The Fonction Schema ", 
+202                   "default": "", 
+203                   "examples": [
+204                     "Directeur général"
+205                   ]
+206                 }
+207               }
+208             }
+209           }, 
+210           "collaborateurs": {
+211             "$id": "/properties/publications/items/properties/collaborateurs", 
+212             "type": "array", 
+213             "items": {
+214               "$id": "/properties/publications/items/properties/collaborateurs/items", 
+215               "type": "object", 
+216               "properties": {
+217                 "civilite": {
+218                   "$id": "/properties/publications/items/properties/collaborateurs/items/properties/civilite", 
+219                   "type": "string", 
+220                   "title": "The Civilite Schema ", 
+221                   "default": "", 
+222                   "examples": [
+223                     "M"
+224                   ]
+225                 }, 
+226                 "nom": {
+227                   "$id": "/properties/publications/items/properties/collaborateurs/items/properties/nom", 
+228                   "type": "string", 
+229                   "title": "The Nom Schema ", 
+230                   "default": "", 
+231                   "examples": [
+232                     "SANCHEZ"
+233                   ]
+234                 }, 
+235                 "prenom": {
+236                   "$id": "/properties/publications/items/properties/collaborateurs/items/properties/prenom", 
+237                   "type": "string", 
+238                   "title": "The Prenom Schema ", 
+239                   "default": "", 
+240                   "examples": [
+241                     "Arnaud"
+242                   ]
+243                 }
+244               }
+245             }
+246           }, 
+247           "declarationTiers": {
+248             "$id": "/properties/publications/items/properties/declarationTiers", 
+249             "type": "boolean", 
+250             "title": "The Declarationtiers Schema ", 
+251             "default": false, 
+252             "examples": [
+253               false
+254             ]
+255           }, 
+256           "clients": {
+257             "$id": "/properties/publications/items/properties/clients", 
+258             "type": "array"
+259           }, 
+260           "declarationOrgaAppartenance": {
+261             "$id": "/properties/publications/items/properties/declarationOrgaAppartenance", 
+262             "type": "boolean", 
+263             "title": "The Declarationorgaappartenance Schema ", 
+264             "default": false, 
+265             "examples": [
+266               false
+267             ]
+268           }, 
+269           "affiliations": {
+270             "$id": "/properties/publications/items/properties/affiliations", 
+271             "type": "array"
+272           }, 
+273           "activites": {
+274             "$id": "/properties/publications/items/properties/activites", 
+275             "type": "object", 
+276             "properties": {
+277               "listSecteursActivites": {
+278                 "$id": "/properties/publications/items/properties/activites/properties/listSecteursActivites", 
+279                 "type": "array", 
+280                 "items": {
+281                   "$id": "/properties/publications/items/properties/activites/properties/listSecteursActivites/items", 
+282                   "type": "object", 
+283                   "properties": {
+284                     "code": {
+285                       "$id": "/properties/publications/items/properties/activites/properties/listSecteursActivites/items/properties/code", 
+286                       "type": "string", 
+287                       "title": "The Code Schema ", 
+288                       "default": "", 
+289                       "examples": [
+290                         "FINANCE"
+291                       ]
+292                     }, 
+293                     "label": {
+294                       "$id": "/properties/publications/items/properties/activites/properties/listSecteursActivites/items/properties/label", 
+295                       "type": "string", 
+296                       "title": "The Label Schema ", 
+297                       "default": "", 
+298                       "examples": [
+299                         "Banques, assurances, secteur financier"
+300                       ]
+301                     }, 
+302                     "ordre": {
+303                       "$id": "/properties/publications/items/properties/activites/properties/listSecteursActivites/items/properties/ordre", 
+304                       "type": "integer", 
+305                       "title": "The Ordre Schema ", 
+306                       "default": 0, 
+307                       "examples": [
+308                         "Banques, assurances, secteur financier"
+309                       ]
+310                     }
+311                   }
+312                 }
+313               }, 
+314               "listNiveauIntervention": {
+315                 "$id": "/properties/publications/items/properties/activites/properties/listNiveauIntervention", 
+316                 "type": "array", 
+317                 "items": {
+318                   "$id": "/properties/publications/items/properties/activites/properties/listNiveauIntervention/items", 
+319                   "type": "object", 
+320                   "properties": {
+321                     "code": {
+322                       "$id": "/properties/publications/items/properties/activites/properties/listNiveauIntervention/items/properties/code", 
+323                       "type": "string", 
+324                       "title": "The Code Schema ", 
+325                       "default": "", 
+326                       "examples": [
+327                         "LOCAL"
+328                       ]
+329                     }, 
+330                     "label": {
+331                       "$id": "/properties/publications/items/properties/activites/properties/listNiveauIntervention/items/properties/label", 
+332                       "type": "string", 
+333                       "title": "The Label Schema ", 
+334                       "default": "", 
+335                       "examples": [
+336                         "Local"
+337                       ]
+338                     }, 
+339                     "ordre": {
+340                       "$id": "/properties/publications/items/properties/activites/properties/listNiveauIntervention/items/properties/ordre", 
+341                       "type": "integer", 
+342                       "title": "The Ordre Schema ", 
+343                       "default": 0, 
+344                       "examples": [
+345                         1
+346                       ]
+347                     }
+348                   }
+349                 }
+350               }
+351             }
+352           }, 
+353           "identifiantNational": {
+354             "$id": "/properties/publications/items/properties/identifiantNational", 
+355             "type": "string", 
+356             "title": "The Identifiantnational Schema ", 
+357             "default": "", 
+358             "examples": [
+359               "812087559"
+360             ]
+361           }, 
+362           "dateCreation": {
+363             "$id": "/properties/publications/items/properties/dateCreation", 
+364             "type": "string", 
+365             "title": "The Datecreation Schema ", 
+366             "default": "", 
+367             "examples": [
+368               "19/04/2018 17:03:37"
+369             ]
+370           }
+371         }
+372       }
+373     }
+374   }
+375 }
+
+
